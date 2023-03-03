@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>NFT Preview Card</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+
+
+        body{
+            display: flex;
+            background: #0D192C;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        
+        .main-container{
+            margin-top: 152px;
+            width: 350px;
+            height: 596px;
+            border-radius: 15px;
+            background: #15263F;
+            padding: 24px;
+        }
+
+
+        .box{
+        width: 302px;
+        height: 302px;
+        background-color: cyan;
+        border-radius: 8px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .cube{
+        display: flex;
+        width: 100%;
+        border-radius: 8px;
+    
+    }
+    
+    .view{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.box:hover .cube{
+    opacity: 0.5;
+}
+
+.box:hover .view{
+    display: block;
+}
+
+        
+        /*.equilibrium{
+                
+                : 302px;
+                height: 302px;
+                width: 100%;
+                border-radius: 8px;
+                background-color: cyan;
+                
+            
+        }*/
+
+     
+       
+        
+        h1{
+            margin-top: 24px;
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 28px;
+            color: #FFFFFF;
+            cursor: pointer;
+
+        }
+
+        .equilibrium-text{
+            margin-top: 16px;
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 26px;
+            color: #8BACD9;
+            
+            
+            
+        }
+
+       
+
+        h2{
+            display: inline;
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #00FFF8;
+
+        }
+      
+ 
+        h3{
+            display: inline;
+            width: 73px;
+            height: 20px;font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #8BACD9;
+        }
+
+        .hrline{
+            border: 0.5px solid #2E405A;
+            width: 302px;
+            height: 0.2px;
+            margin-top: 24px;
+            display: block;
+            
+        }
+
+        .avatar{
+            margin-top: 16px;
+            height: 33px;
+            border: 1px solid #FFFFFF;
+            border-radius: 50%;
+           
+            
+        }
+        
+        .avatar-text{
+            margin-top: 14px;
+            margin-left: 16px;
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #8BACD9;
+            
+
+            
+        }
+        .Jules-Wyvern{
+            margin-left: 2px;
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        
+        
+        /*hovers*/
+        
+        span:hover{
+            color: cyan;
+        }
+        
+        h1:hover{
+            color: cyan;
+        }
+
+        
+        .author-container{
+            display: flex;
+            align-items: center;
+            max-width: 302px;
+
+        }
+
+        .clock-container{
+            display: flex;
+            align-items: center;
+            
+        }
+
+        .ethereum-container{
+            display: flex;
+            align-items: center;
+            
+        }
+
+        .wrapper{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        
+       .eth-price{
+        margin-left: 5px;
+       }
+
+       h3{
+        margin-left: 6px;
+       }
+       
+    </style>
+ 
+</head>
+  
+
+<body>
+    <div class="main-container">
+        <div class="box">
+            <img class="cube" src="./images/image-equilibrium.jpg">
+            <img class="view" src="./images/icon-view.svg">
+    </div>
+        
+    <!--<img src="./images/image-equilibrium.jpg" alt="equilibrium" class="equilibrium"><!-->
+      
+        <h1>Equilibrium #3429</h1>
+      <p class="equilibrium-text">Our Equilibrium collection promotes balance and calm.</p>
+
+    <div class="wrapper">
+      
+        <div class="ethereum-container">
+        <img src="./images/icon-ethereum.svg" alt="ethereum" class="ethereum-icon">
+        <h2 class="eth-price"> 0.041 ETH</h2>
+        </div>
+
+        <div class="clock-container">
+        <img src="./images/icon-clock.svg" alt="clock" class="clock">
+        <h3> 3 days left</h3>
+        </div>
+    
+    </div>
+      
+      <hr class="hrline"/> 
+      
+      <div class="author-container">
+
+      <img src="./images/image-avatar.png" alt="avatar" class="avatar">     
+      <p class="avatar-text">Creation of <span class="Jules-Wyvern">Jules Wyvern</span></p>
+      
+    </div>
+  </body>
+</html>
